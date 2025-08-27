@@ -20,8 +20,8 @@
         </div>
         <div class="flex align-center">
             <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-[#41ff6b1a] h-10 w-20 mt-2.5">0 <span class="ml-2 "><img class="h-5 w-5" src="assets/heart.png" alt=""></span></h1>
-            <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-[#41ff6b1a] h-10 w-20 mt-2.5">100 <span class="ml-2"><img class="h-5 w-5" src="assets/coin.png" alt=""></span></h1>
-            <button class="btn btn-copy text-white rounded-3xl mt-2.5 bg-[#006747]"><span>0</span>Copy</button>
+            <h1 id="coins" class="flex justify-center items-center mr-10 rounded-3xl bg-[#41ff6b1a] h-10 w-20 mt-2.5"> 100 <span class="ml-2"><img class="h-5 w-5" src="assets/coin.png" alt=""></span></h1>
+            <button class="btn btn-copy text-white rounded-3xl mt-2.5 bg-[#00a63e]"><span>0</span>Copy</button>
         </div>
     </div>
 
@@ -35,9 +35,9 @@
     </div>
 
     <!-- main section  -->
-    <div class="max-h-full max-w-full bg-[#41ff6b1a] pt-5 pl-5">
-        <div class="grid grid-cols-3 gap-2 mr-65 p-2">
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+    <div class="max-h-full max-w-full bg-[#41ff6b1a] pt-5 pl-5 flex">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -48,10 +48,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">All </h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callAllService" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/police.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -62,10 +62,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Police</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callPolice" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span >Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/fire-service.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -76,10 +76,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Fire</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callFire" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/ambulance.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -90,10 +90,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Health</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callAmbulance" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/emergency.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -104,10 +104,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Help</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callwANDc" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/emergency.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -118,10 +118,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Govt.</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callAC" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/emergency.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -132,10 +132,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Electricity</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callE" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/brac.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -146,10 +146,10 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">NGO</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callB" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
-            <div class="h-70 w-80 mb-2 p-4 shadow-md bg-white rounded-2xl">
+            <div class="h-70 w-75 mb-2 p-4 shadow-md bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <img class="h-16 w-16" src="assets/Bangladesh-Railway.png" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -160,11 +160,27 @@
                 <h1 class="flex justify-center items-center mr-10 rounded-3xl bg-gray-200 h-10 w-20 mt-2.5 my-2">Travel</h1>
                 <div class="flex justify-between">
                     <button class="px-8 py-2 border-2 border-gray-300 rounded-xl"><i class="fa-regular fa-copy font-light"></i><span class="font-light">Copy</span></button>
-                    <button class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button id="callBR" class="px-10 py-2 bg-[#00a63e] text-white rounded-xl"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
         </div>
-        <div></div>
+        <div class="ml-3 bg-white h-[880spx] ">
+            <div class="flex  gap-2 rounded-lg p-2"> 
+                <div class="flex justify-between items-center ml-2">
+                    <i class="fa-regular fa-clock mr-1"></i>
+                    <h2>Call History</h2>
+                </div>
+                <div>
+                    <button id="clearBtn" class="btn btn-copy text-white rounded-3xl bg-[#00a63e] ml-20">Clear</button>
+                </div>
+            </div>
+            <ul id="history" class="space-y-2"></ul>
+        </div>
     </div>
+
+
+
+
+    <script src="demo.js"></script>
 </body>
 </html>
