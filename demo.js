@@ -291,3 +291,18 @@
       heartCount.textContent = count;
     });
   });
+
+
+    //  copy counter button
+  var copys = document.querySelectorAll('.copy');
+
+  var copyCount = document.getElementById('copyCount');
+  
+
+
+  copys.forEach(function(copy) {
+    copy.addEventListener('click', function() {
+      count++;
+      copyCount.textContent = count;
+    });
+  });
