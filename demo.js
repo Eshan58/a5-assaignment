@@ -1,5 +1,5 @@
     let coins = 100
-    
+    var count = 0;
     
     let coinsText = document.getElementById("coins");
     let historyList = document.getElementById("history");
@@ -8,21 +8,8 @@
     // Function to get current time
     function getCurrentTime() {
       let now = new Date();
-      return now.toLocaleTimeString(); // Example: "11:36:58 AM"
+      return now.toLocaleTimeString();// Example: "11:36:58 AM"
     }
-
-    // all service button
-    // let allServiceBtn = document.getElementById("callAllService")
-    //     .addEventListener("click", function() {
-    //   if (coins < 20) {
-    //     alert("Not enough coins!");
-    //     return;
-    //   }
-    //   alert("Calling National Emergency Number - 999");
-    //   coins = coins - 20;
-    //   coinsText.innerText = coins;
-    //   historyList.innerHTML += "<li class='bg-[#41ff6b1a] p-2 rounded shadow'>National Emergency <br> Number <br> 999</li>"})
-
 
     // National Emergency Number button
     document.getElementById("callAllService").addEventListener("click", function() {
@@ -126,7 +113,7 @@
 
       let Calltime = hours + ":" + minutes + ":" + seconds;
 
-      alert("Calling Ambulance Service Number - 109");
+      alert("Calling Ambulance Service Number - 1994-999999");
 
       coins = coins - 20;
       coinsText.innerText = coins;
@@ -280,22 +267,27 @@
       historyList.innerHTML = "";
     })
  
+    // number copy button 
+    function copyText() {
+      const text = document.getElementById('copy-number').innerText;
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Text copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+
+  //  heart counter button
+  var hearts = document.querySelectorAll('.heart');
+
+  var heartCount = document.getElementById('heart-count');
+  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  hearts.forEach(function(heart) {
+    heart.addEventListener('click', function() {
+      count++;
+      heartCount.textContent = count;
+    });
+  });
